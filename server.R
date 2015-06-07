@@ -3,9 +3,9 @@ library(mapproj)
 
 shinyServer(function(input, output) {
   
-  output$map1 <- renderPlot({
-    map('county', 'California')
-  })
+#   output$map1 <- renderPlot({
+#     map('county', 'California')
+#   })
   
   output$map2 <- renderPlot({
     map('county', 'California')
@@ -13,25 +13,27 @@ shinyServer(function(input, output) {
   })
 })
 
-
-
-# counties<- read.csv()
+# 
+# 
 # source("helpers.R")
 # 
 # shinyServer(function(input, output){
 #   
-#     output$map<- renderPlot({
-#       args<- switch(input$var,
-#         "Percent White"= list(counties$white, "steelblue", "% White"),
-#         "Percent Black" = list(counties$black, "turquoise", "% Black"),
-#         "Percent Hispanic" = list(counties$hispanic, "seagreen", "% Hispanic"),
-#         "Percent Asian" = list(counties$asian, "purple", "% Asian"))
-# 
-#       args$min <- input$range[1]
-#       args$max <- input$range[2]
-# 
-#       do.call(percent_map, args)
-#     })
+# #     output$map1<- renderPlot({
+# #       args<- switch(input$climvar,
+# #         "ClimVar1"= list(data$climvar, "steelblue", "legend title"))
+# #        
+# #       args$year <- input$year
+# # 
+# #       do.call(percent_map, args)
+# #     })
 #     
+#       output$map2<- renderPlot({
+#         args<- switch(input$healthvar,
+#           "healthvar1" = list(cases$x, "tomato1", "legend title"))
+#         args$year<- input$year
+#         
+#         do.call(percent_map, args)
+#       })
 #   }
 # )

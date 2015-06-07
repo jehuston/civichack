@@ -12,3 +12,8 @@ at a certain point (say 1950-01-31). Both maps show the same part of the world (
 The left map is a temperature map and the right map is a asthma map.
 As the user moves the widget, both quantities change on both maps simultaneously.
 This is meant to show possible links between the effects of climate change and diseases that affect many people. 
+
+Team Members:
+* Ted Fujimoto
+* Jane Huston
+* Tony Tsieu
